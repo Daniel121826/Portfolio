@@ -1,0 +1,20 @@
+/* src/index.css */
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-artistic-light: #fdfbf7;
+  --color-artistic-dark: #0f172a;
+  --color-artistic-accent: #6366f1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Efecto de pincelada artística */
+.brush-stroke {
+  background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.12) 0%, transparent 70%);
+  filter: blur(40px);
+}
